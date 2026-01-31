@@ -1,0 +1,213 @@
+/* Custom Styles for One One Thrift Store */
+
+/* Hero Section with Background Image */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    padding: 120px 0;
+}
+
+/* Custom Button */
+.btn-cta {
+    background-color: #0d6efd;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #004dc0;
+    transform: translateY(-2px);
+}
+
+/* Video Styling */
+.video-preview {
+    border-radius: 15px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Service Cards */
+.service-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.service-card h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Footer Links */
+.footer-link {
+    color: #0dcaf0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Custom Boutique Styles */
+.about-hero-box {
+    padding: 60px !important;
+    transform: rotate(-2deg); /* Adds a cool, modern "off-grid" look */
+}
+
+.pillar-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.pillar-card:hover {
+    border-color: #0d6efd;
+    transform: translateY(-10px);
+}
+
+.icon-circle {
+    font-size: 2.5rem;
+    background: #f8f9fa;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Fix for mobile */
+@media (max-width: 768px) {
+    .about-hero-box {
+        transform: rotate(0deg); /* Remove rotation on small screens */
+        padding: 30px !important;
+    }
+}
+
+/* Letter Spacing for headers */
+.ls-2 { letter-spacing: 2px; }
+
+/* Image Wrapper to prevent it from being "too big" */
+.image-wrapper {
+    max-width: 400px; /* Limits the size on desktop */
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #f8f9fa;
+}
+
+.prof-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; /* This makes the image look cropped and professional */
+    display: block;
+}
+
+/* Typography Improvements */
+h2 {
+    color: #2d3436;
+    letter-spacing: -1px;
+}
+
+p {
+    line-height: 1.8; /* More space between lines of text is easier to read */
+}
+
+/* Stats Section Border Fix for Mobile */
+@media (max-width: 768px) {
+    .border-start, .border-end {
+        border: none !important;
+        margin-bottom: 2rem;
+    }
+    .prof-image {
+        height: 300px; /* Smaller height on phones */
+    }
+}
+
+/* About Page Image Control */
+.image-wrapper-about {
+    max-width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    /* This ensures the image isn't "too big" vertically */
+    max-height: 500px; 
+}
+
+.image-wrapper-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps the crop professional */
+}
+
+/* Card hover effect (Consistent with service page) */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Service Page Styles */
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.service-card {
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-bottom: 4px solid #0d6efd; /* Adds a blue highlight on hover */
+}
+
+.card-title {
+    color: #1a1a1a;
+}
+
+/* Contact Page Styling */
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: #eef2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+    border-color: #0d6efd;
+}
+
